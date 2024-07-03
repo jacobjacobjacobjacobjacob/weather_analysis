@@ -141,7 +141,4 @@ if __name__ == "__main__":
     weather_hour = clean_weather_data(weather_hour)
     weather_hour.to_csv("datasets/weather_hour.csv", index=False)
 
-    pd.set_option("display.max_columns", None)  # Show all columns
-    # pd.set_option('display.max_rows', None)  # Show all rows (optional)
-
     print(weather_day.head())
